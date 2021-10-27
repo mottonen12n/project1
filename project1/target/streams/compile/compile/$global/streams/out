@@ -1,0 +1,12 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\news.scala:115:109: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
+[0m[[0m[31merror[0m] [0m[0m required: Option[Int][0m
+[0m[[0m[31merror[0m] [0m[0m    val Right(response) = client.everything(query = "nhl", from = Some(fromDate), to = Some(toDate), page = pageNum, pageSize = Some(pageS))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\news.scala:116:32: value totalResults is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m    println(s"Found ${response.totalResults} articles.")[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\news.scala:117:14: value articles is not a member of Any[0m
+[0m[[0m[31merror[0m] [0m[0m    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

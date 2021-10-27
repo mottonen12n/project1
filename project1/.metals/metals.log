@@ -1,0 +1,730 @@
+[0m2021.10.25 09:41:33 INFO  Started: Metals version 0.10.7 in workspace 'C:\Scala\Project1\project1' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.25 09:41:34 INFO  time: initialize in 0.47s[0m
+[0m2021.10.25 09:41:34 WARN  Build server is not auto-connectable.[0m
+[0m2021.10.25 11:05:04 WARN  no build target for: C:\Scala\Project1\project1\build.sbt[0m
+[0m2021.10.25 11:05:06 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.25 11:05:07 INFO  time: code lens generation in 2.99s[0m
+Oct 25, 2021 11:05:15 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+[0m2021.10.25 11:05:17 WARN  no build target for: C:\Scala\Project1\project1\project\Dependencies.scala[0m
+Oct 25, 2021 11:05:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+[0m2021.10.25 11:05:31 WARN  no build target for: C:\Scala\Project1\project1\build.sbt[0m
+[0m2021.10.25 11:06:58 WARN  no build target for: C:\Scala\Project1\project1\build.sbt[0m
+[0m2021.10.25 11:07:01 INFO  running 'C:\Program Files\Java\jre1.8.0_301\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Work\AppData\Local\Temp\metals4173015331281670985\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.25 11:07:10 INFO  [info] Loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.10.25 11:07:10 INFO  [info] Loading project definition from C:\Scala\Project1\project1\project\project[0m
+[0m2021.10.25 11:07:10 INFO  [info] Updating ProjectRef(uri("file:/C:/Scala/Project1/project1/project/project/"), "project1-build-build")...[0m
+[0m2021.10.25 11:07:12 INFO  [info] Done updating.[0m
+[0m2021.10.25 11:07:14 INFO  [info] Loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.10.25 11:07:14 INFO  [info] Loading project definition from C:\Scala\Project1\project1\project[0m
+[0m2021.10.25 11:07:14 INFO  [info] Updating ProjectRef(uri("file:/C:/Scala/Project1/project1/project/"), "project1-build")...[0m
+[0m2021.10.25 11:07:16 INFO  [info] Done updating.[0m
+[0m2021.10.25 11:07:17 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.10.25 11:07:17 INFO  [success] Total time: 3 s, completed Oct 25, 2021 11:07:17 AM[0m
+[0m2021.10.25 11:07:19 INFO  [info] Loading settings for project root from build.sbt ...[0m
+[0m2021.10.25 11:07:19 INFO  [info] Set current project to project1 (in build file:/C:/Scala/Project1/project1/)[0m
+[0m2021.10.25 11:07:19 INFO  [info] Updating ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/com/github/fedeoasi/news-api-client_2.12/0.4/news-api-client_2.12-0.4.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/org/scalaj/scalaj-http_2.12/2.3.0/scalaj-http_2.12-2.3.0.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.12/3.5.3/json4s-jackson_2.12-3.5.3.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.5.3/json4s-core_2.12-3.5.3.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/com/neovisionaries/nv-i18n/1.22/nv-i18n-1.22.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] org.json4s#json4s-jackson_2.12;3.5.3!json4s-jackson_2.12.jar (232ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.5.3/json4s-ast_2.12-3.5.3.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] org.scalaj#scalaj-http_2.12;2.3.0!scalaj-http_2.12.jar (242ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.5.3/json4s-scalap_2.12-3.5.3.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] com.neovisionaries#nv-i18n;1.22!nv-i18n.jar(bundle) (259ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] org.json4s#json4s-core_2.12;3.5.3!json4s-core_2.12.jar (313ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] com.github.fedeoasi#news-api-client_2.12;0.4!news-api-client_2.12.jar (319ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-databind;2.8.4!jackson-databind.jar(bundle) (325ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] org.json4s#json4s-ast_2.12;3.5.3!json4s-ast_2.12.jar (124ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-annotations;2.8.0!jackson-annotations.jar(bundle) (126ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] org.json4s#json4s-scalap_2.12;3.5.3!json4s-scalap_2.12.jar (150ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.8.4!jackson-core.jar(bundle) (85ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] Done updating.[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/org/scalaj/scalaj-http_2.12/2.3.0/scalaj-http_2.12-2.3.0-sources.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4-sources.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.8.0/jackson-annotations-2.8.0-sources.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/com/neovisionaries/nv-i18n/1.22/nv-i18n-1.22-sources.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.12/3.5.3/json4s-jackson_2.12-3.5.3-sources.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.5.3/json4s-ast_2.12-3.5.3-sources.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] org.scalaj#scalaj-http_2.12;2.3.0!scalaj-http_2.12.jar(src) (134ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-databind;2.8.4!jackson-databind.jar(src) (145ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.5.3/json4s-scalap_2.12-3.5.3-sources.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-annotations;2.8.0!jackson-annotations.jar(src) (160ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/com/github/fedeoasi/news-api-client_2.12/0.4/news-api-client_2.12-0.4-sources.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] org.json4s#json4s-jackson_2.12;3.5.3!json4s-jackson_2.12.jar(src) (181ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4-sources.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] com.neovisionaries#nv-i18n;1.22!nv-i18n.jar(src) (185ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] org.json4s#json4s-ast_2.12;3.5.3!json4s-ast_2.12.jar(src) (189ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] downloading https://repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.5.3/json4s-core_2.12-3.5.3-sources.jar ...[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] com.github.fedeoasi#news-api-client_2.12;0.4!news-api-client_2.12.jar(src) (135ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] org.json4s#json4s-scalap_2.12;3.5.3!json4s-scalap_2.12.jar(src) (152ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] com.fasterxml.jackson.core#jackson-core;2.8.4!jackson-core.jar(src) (132ms)[0m
+[0m2021.10.25 11:07:21 INFO  [info] 	[SUCCESSFUL ] org.json4s#json4s-core_2.12;3.5.3!json4s-core_2.12.jar(src) (132ms)[0m
+[0m2021.10.25 11:07:21 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.10.25 11:07:21 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.10.25 11:07:21 INFO  [success] Total time: 3 s, completed Oct 25, 2021 11:07:22 AM[0m
+[0m2021.10.25 11:07:22 INFO  time: ran 'sbt bloopInstall' in 21s[0m
+[0m2021.10.25 11:07:22 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 25491'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading 2 projects from 'c:\Scala\Project1\project1\.bloop'...
+[0m[32m[D][0m Loading project from 'c:\Scala\Project1\project1\.bloop\root-test.json'
+[0m[32m[D][0m Loading project from 'c:\Scala\Project1\project1\.bloop\root.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.8.
+[0m[32m[D][0m   => C:\Users\Work\.ivy2\cache\jline\jline\jars\jline-2.14.6.jar
+[0m[32m[D][0m   => C:\Users\Work\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.0.6.jar
+[0m[32m[D][0m   => C:\Users\Work\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.12.8.jar
+[0m[32m[D][0m   => C:\Users\Work\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.8.jar
+[0m[32m[D][0m   => C:\Users\Work\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.8.jar
+[0m[32m[D][0m Missing analysis file for project 'root-test'
+[0m[32m[D][0m Missing analysis file for project 'root'
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:25491...
+The server is listening for incoming connections at tcp://127.0.0.1:25491...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.25 11:07:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 11:07:24 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 14828'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:14828...
+The server is listening for incoming connections at tcp://127.0.0.1:14828...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.25 11:07:24 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 11:07:24 INFO  time: Connected to build server in 1.9s[0m
+[0m2021.10.25 11:07:24 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.25 11:07:27 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:07:27 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.25 11:07:31 INFO  time: indexed workspace in 6.91s[0m
+[0m2021.10.25 11:07:31 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:07:31 INFO  compiling project1-build (1 scala source)[0m
+[0m2021.10.25 11:07:32 INFO  time: code lens generation in 4.66s[0m
+[0m2021.10.25 11:07:36 INFO  time: compiled project1-build in 4.38s[0m
+[0m2021.10.25 11:08:54 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:08:58 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:09:03 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:09:03 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:09:37 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:09:48 INFO  compiling root (2 scala sources)[0m
+[0m2021.10.25 11:09:51 INFO  time: compiled root in 3.09s[0m
+[0m2021.10.25 11:10:13 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 11:10:13 INFO  time: compiled root in 0.86s[0m
+[0m2021.10.25 11:10:40 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 11:10:40 INFO  time: compiled root in 0.41s[0m
+Oct 25, 2021 11:11:10 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 122
+[0m2021.10.25 11:11:19 INFO  running 'C:\Program Files\Java\jre1.8.0_301\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Work\AppData\Local\Temp\metals6172013975529101461\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.25 11:11:26 INFO  [info] Loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.10.25 11:11:26 INFO  [info] Loading project definition from C:\Scala\Project1\project1\project\project[0m
+[0m2021.10.25 11:11:28 INFO  [info] Loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.10.25 11:11:28 INFO  [info] Loading project definition from C:\Scala\Project1\project1\project[0m
+[0m2021.10.25 11:11:30 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.10.25 11:11:30 INFO  [success] Total time: 3 s, completed Oct 25, 2021 11:11:31 AM[0m
+[0m2021.10.25 11:11:30 INFO  [info] Loading settings for project root from build.sbt ...[0m
+[0m2021.10.25 11:11:30 INFO  [info] Set current project to project1 (in build file:/C:/Scala/Project1/project1/)[0m
+[0m2021.10.25 11:11:31 INFO  [info] Updating ...[0m
+[0m2021.10.25 11:11:31 INFO  [info] Done updating.[0m
+[0m2021.10.25 11:11:31 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.10.25 11:11:31 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.10.25 11:11:31 INFO  [success] Total time: 1 s, completed Oct 25, 2021 11:11:32 AM[0m
+[0m2021.10.25 11:11:32 INFO  time: ran 'sbt bloopInstall' in 12s[0m
+[0m2021.10.25 11:11:32 INFO  Disconnecting from Bloop session...[0m
+[0m2021.10.25 11:11:32 INFO  Shut down connection with build server.[0m
+No more data in the server stdin, exiting...
+[0mNo more data in the server stdin, exiting...
+2021.10.25 11:11:32 INFO  Shut down connection with build server.No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+[0m2021.10.25 11:11:32 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 22579'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:22579...
+The server is listening for incoming connections at tcp://127.0.0.1:22579...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.25 11:11:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 11:11:32 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 29780'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:29780...
+The server is listening for incoming connections at tcp://127.0.0.1:29780...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.25 11:11:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 11:11:33 INFO  time: Connected to build server in 0.8s[0m
+[0m2021.10.25 11:11:33 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.25 11:11:33 INFO  time: indexed workspace in 0.59s[0m
+[0m2021.10.25 11:11:34 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 11:11:34 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.25 11:11:34 INFO  time: compiled root in 0.58s[0m
+[0m2021.10.25 11:11:33 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:11:34 WARN  unsupported Scala 2.12.7[0m
+Oct 25, 2021 11:11:36 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 138
+[0m2021.10.25 11:11:58 INFO  shutting down Metals[0m
+[0m2021.10.25 11:11:58 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.10.25 11:11:58 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+[0m2021.10.25 11:13:15 INFO  Started: Metals version 0.10.7 in workspace 'C:\Scala\Project1\project1' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.25 11:13:15 INFO  time: initialize in 0.54s[0m
+[0m2021.10.25 11:13:16 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.25 11:13:16 WARN  no build target for: C:\Scala\Project1\project1\src\main\scala\news\news.scala[0m
+[0m2021.10.25 11:13:15 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 42806'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:42806...
+The server is listening for incoming connections at tcp://127.0.0.1:42806...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.25 11:13:18 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 11:13:18 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 17945'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:17945...
+The server is listening for incoming connections at tcp://127.0.0.1:17945...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.25 11:13:19 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 11:13:19 INFO  time: Connected to build server in 2.82s[0m
+[0m2021.10.25 11:13:19 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.25 11:13:19 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.25 11:13:19 INFO  time: Imported build in 0.16s[0m
+[0m2021.10.25 11:13:20 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.25 11:13:21 INFO  time: code lens generation in 4.66s[0m
+[0m2021.10.25 11:13:21 INFO  time: code lens generation in 4.73s[0m
+[0m2021.10.25 11:13:21 INFO  time: code lens generation in 1.61s[0m
+[0m2021.10.25 11:13:23 INFO  time: indexed workspace in 3.81s[0m
+[0m2021.10.25 11:13:23 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 11:13:23 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.25 11:13:24 INFO  time: compiled root in 1.15s[0m
+[0m2021.10.25 11:13:24 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 11:13:24 INFO  time: compiled root in 0.37s[0m
+[0m2021.10.25 11:13:59 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 11:13:59 INFO  time: compiled root in 0.23s[0m
+[0m2021.10.25 11:16:06 WARN  no build target for: C:\Scala\Project1\project1\build.sbt[0m
+[0m2021.10.25 11:16:10 WARN  no build target for: C:\Scala\Project1\project1\build.sbt[0m
+[0m2021.10.25 11:16:13 INFO  running 'C:\Program Files\Java\jre1.8.0_301\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Work\AppData\Local\Temp\metals1074479764284398669\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.25 11:16:21 INFO  [info] Loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.10.25 11:16:21 INFO  [info] Loading project definition from C:\Scala\Project1\project1\project\project[0m
+[0m2021.10.25 11:16:22 INFO  [info] Loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.10.25 11:16:22 INFO  [info] Loading project definition from C:\Scala\Project1\project1\project[0m
+[0m2021.10.25 11:16:25 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.10.25 11:16:25 INFO  [success] Total time: 3 s, completed Oct 25, 2021 11:16:26 AM[0m
+[0m2021.10.25 11:16:28 INFO  [info] Loading settings for project root from build.sbt ...[0m
+[0m2021.10.25 11:16:28 INFO  [info] Set current project to project1 (in build file:/C:/Scala/Project1/project1/)[0m
+[0m2021.10.25 11:16:28 INFO  [info] Updating ...[0m
+[0m2021.10.25 11:16:29 INFO  [info] downloading https://repo1.maven.org/maven2/com/github/fedeoasi/news-api-client_2.12/0.5/news-api-client_2.12-0.5.jar ...[0m
+[0m2021.10.25 11:16:29 INFO  [info] 	[SUCCESSFUL ] com.github.fedeoasi#news-api-client_2.12;0.5!news-api-client_2.12.jar (94ms)[0m
+[0m2021.10.25 11:16:29 INFO  [info] Done updating.[0m
+[0m2021.10.25 11:16:29 INFO  [info] downloading https://repo1.maven.org/maven2/com/github/fedeoasi/news-api-client_2.12/0.5/news-api-client_2.12-0.5-sources.jar ...[0m
+[0m2021.10.25 11:16:29 INFO  [info] 	[SUCCESSFUL ] com.github.fedeoasi#news-api-client_2.12;0.5!news-api-client_2.12.jar(src) (209ms)[0m
+[0m2021.10.25 11:16:29 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.10.25 11:16:29 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.10.25 11:16:29 INFO  [success] Total time: 2 s, completed Oct 25, 2021 11:16:30 AM[0m
+[0m2021.10.25 11:16:31 INFO  time: ran 'sbt bloopInstall' in 17s[0m
+[0m2021.10.25 11:16:31 INFO  Disconnecting from Bloop session...[0m
+[0m2021.10.25 11:16:31 INFO  Shut down connection with build server.[0m
+[0m2021.10.25 11:16:31 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.10.25 11:16:31 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.25 11:16:31 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 11:16:31 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.25 11:16:32 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 11:16:32 INFO  time: Connected to build server in 1.07s[0m
+[0m2021.10.25 11:16:32 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.25 11:16:33 INFO  time: indexed workspace in 1.23s[0m
+[0m2021.10.25 11:16:33 INFO  compiling root (2 scala sources)[0m
+[0m2021.10.25 11:16:33 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.25 11:16:34 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:16:34 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:16:35 INFO  time: compiled root in 1.25s[0m
+[0m2021.10.25 11:16:35 INFO  compiling root-test (1 scala source)[0m
+[0m2021.10.25 11:16:36 INFO  time: compiled root-test in 1.06s[0m
+[0m2021.10.25 11:19:56 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 11:19:56 INFO  time: compiled root in 0.57s[0m
+[0m2021.10.25 11:35:11 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 11:35:11 INFO  time: compiled root in 0.52s[0m
+[0m2021.10.25 11:35:36 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 11:35:36 INFO  time: compiled root in 0.36s[0m
+[0m2021.10.25 11:35:42 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:35:42 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:35:45 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:35:47 INFO  running 'C:\Program Files\Java\jre1.8.0_301\bin\java -Djline.terminal=jline.UnsupportedTerminal -Dsbt.log.noformat=true -Dfile.encoding=UTF-8 -jar C:\Users\Work\AppData\Local\Temp\metals5453309764106430059\sbt-launch.jar -Dbloop.export-jar-classifiers=sources bloopInstall'[0m
+[0m2021.10.25 11:35:52 INFO  [info] Loading settings for project project1-build-build from metals.sbt ...[0m
+[0m2021.10.25 11:35:52 INFO  [info] Loading project definition from C:\Scala\Project1\project1\project\project[0m
+[0m2021.10.25 11:35:54 INFO  [info] Loading settings for project project1-build from metals.sbt ...[0m
+[0m2021.10.25 11:35:54 INFO  [info] Loading project definition from C:\Scala\Project1\project1\project[0m
+[0m2021.10.25 11:35:56 INFO  [success] Generated .bloop\project1-build.json[0m
+[0m2021.10.25 11:35:56 INFO  [success] Total time: 3 s, completed Oct 25, 2021 11:35:57 AM[0m
+[0m2021.10.25 11:35:59 INFO  [info] Loading settings for project root from build.sbt ...[0m
+[0m2021.10.25 11:35:59 INFO  [info] Set current project to project1 (in build file:/C:/Scala/Project1/project1/)[0m
+[0m2021.10.25 11:35:59 INFO  [success] Generated .bloop\root.json[0m
+[0m2021.10.25 11:35:59 INFO  [success] Generated .bloop\root-test.json[0m
+[0m2021.10.25 11:35:59 INFO  [success] Total time: 0 s, completed Oct 25, 2021 11:36:00 AM[0m
+[0m2021.10.25 11:36:00 INFO  time: ran 'sbt bloopInstall' in 12s[0m
+[0m2021.10.25 11:36:00 INFO  Disconnecting from Bloop session...[0m
+[0m2021.10.25 11:36:00 INFO  Shut down connection with build server.[0m
+[0m2021.10.25 11:36:00 INFO  Shut down connection with build server.[0m
+[0m2021.10.25 11:36:00 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.25 11:36:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 11:36:00 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.25 11:36:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 11:36:01 INFO  time: Connected to build server in 1.02s[0m
+[0m2021.10.25 11:36:01 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.25 11:36:01 INFO  time: indexed workspace in 0.54s[0m
+[0m2021.10.25 11:36:01 INFO  compiling root (2 scala sources)[0m
+[0m2021.10.25 11:36:02 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.25 11:36:01 INFO  time: compiled root in 0.39s[0m
+[0m2021.10.25 11:36:02 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:36:02 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.25 11:45:37 INFO  compiling root (2 scala sources)[0m
+[0m2021.10.25 11:45:37 INFO  time: compiled root in 0.36s[0m
+[0m2021.10.25 12:00:09 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 12:00:09 INFO  time: compiled root in 0.13s[0m
+[0m2021.10.25 12:28:01 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 12:28:01 INFO  time: compiled root in 0.12s[0m
+[0m2021.10.25 12:28:24 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:13:27: stale bloop error: not enough arguments for method everything: (query: String, sources: Seq[String], domains: Seq[String], from: Option[java.time.Instant], to: Option[java.time.Instant], language: Option[com.neovisionaries.i18n.LanguageCode], sortBy: Option[com.github.fedeoasi.newsapi.SortBy], pageSize: Option[Int], page: Option[Int])com.github.fedeoasi.newsapi.NewsApiClient.Response[com.github.fedeoasi.newsapi.ArticlesResponse].
+Unspecified value parameter query.
+    val Right(response) = client.everything(from = Some(fromDate), to = Some(toDate))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:24 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:14:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:24 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:15:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:24 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:13:27: stale bloop error: not enough arguments for method everything: (query: String, sources: Seq[String], domains: Seq[String], from: Option[java.time.Instant], to: Option[java.time.Instant], language: Option[com.neovisionaries.i18n.LanguageCode], sortBy: Option[com.github.fedeoasi.newsapi.SortBy], pageSize: Option[Int], page: Option[Int])com.github.fedeoasi.newsapi.NewsApiClient.Response[com.github.fedeoasi.newsapi.ArticlesResponse].
+Unspecified value parameter query.
+    val Right(response) = client.everything(from = Some(fromDate), to = Some(toDate))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:24 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:14:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:24 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:15:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:13:27: stale bloop error: not enough arguments for method everything: (query: String, sources: Seq[String], domains: Seq[String], from: Option[java.time.Instant], to: Option[java.time.Instant], language: Option[com.neovisionaries.i18n.LanguageCode], sortBy: Option[com.github.fedeoasi.newsapi.SortBy], pageSize: Option[Int], page: Option[Int])com.github.fedeoasi.newsapi.NewsApiClient.Response[com.github.fedeoasi.newsapi.ArticlesResponse].
+Unspecified value parameter query.
+    val Right(response) = client.everything(from = Some(fromDate), to = Some(toDate))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:14:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:15:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:13:27: stale bloop error: not enough arguments for method everything: (query: String, sources: Seq[String], domains: Seq[String], from: Option[java.time.Instant], to: Option[java.time.Instant], language: Option[com.neovisionaries.i18n.LanguageCode], sortBy: Option[com.github.fedeoasi.newsapi.SortBy], pageSize: Option[Int], page: Option[Int])com.github.fedeoasi.newsapi.NewsApiClient.Response[com.github.fedeoasi.newsapi.ArticlesResponse].
+Unspecified value parameter query.
+    val Right(response) = client.everything(from = Some(fromDate), to = Some(toDate))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:14:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:15:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:13:27: stale bloop error: not enough arguments for method everything: (query: String, sources: Seq[String], domains: Seq[String], from: Option[java.time.Instant], to: Option[java.time.Instant], language: Option[com.neovisionaries.i18n.LanguageCode], sortBy: Option[com.github.fedeoasi.newsapi.SortBy], pageSize: Option[Int], page: Option[Int])com.github.fedeoasi.newsapi.NewsApiClient.Response[com.github.fedeoasi.newsapi.ArticlesResponse].
+Unspecified value parameter query.
+    val Right(response) = client.everything(from = Some(fromDate), to = Some(toDate))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:14:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:15:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:13:27: stale bloop error: not enough arguments for method everything: (query: String, sources: Seq[String], domains: Seq[String], from: Option[java.time.Instant], to: Option[java.time.Instant], language: Option[com.neovisionaries.i18n.LanguageCode], sortBy: Option[com.github.fedeoasi.newsapi.SortBy], pageSize: Option[Int], page: Option[Int])com.github.fedeoasi.newsapi.NewsApiClient.Response[com.github.fedeoasi.newsapi.ArticlesResponse].
+Unspecified value parameter query.
+    val Right(response) = client.everything(from = Some(fromDate), to = Some(toDate))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:14:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:15:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:13:27: stale bloop error: not enough arguments for method everything: (query: String, sources: Seq[String], domains: Seq[String], from: Option[java.time.Instant], to: Option[java.time.Instant], language: Option[com.neovisionaries.i18n.LanguageCode], sortBy: Option[com.github.fedeoasi.newsapi.SortBy], pageSize: Option[Int], page: Option[Int])com.github.fedeoasi.newsapi.NewsApiClient.Response[com.github.fedeoasi.newsapi.ArticlesResponse].
+Unspecified value parameter query.
+    val Right(response) = client.everything(from = Some(fromDate), to = Some(toDate))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:14:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:15:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:13:27: stale bloop error: not enough arguments for method everything: (query: String, sources: Seq[String], domains: Seq[String], from: Option[java.time.Instant], to: Option[java.time.Instant], language: Option[com.neovisionaries.i18n.LanguageCode], sortBy: Option[com.github.fedeoasi.newsapi.SortBy], pageSize: Option[Int], page: Option[Int])com.github.fedeoasi.newsapi.NewsApiClient.Response[com.github.fedeoasi.newsapi.ArticlesResponse].
+Unspecified value parameter query.
+    val Right(response) = client.everything(from = Some(fromDate), to = Some(toDate))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:14:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:15:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:28 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:13:27: stale bloop error: not enough arguments for method everything: (query: String, sources: Seq[String], domains: Seq[String], from: Option[java.time.Instant], to: Option[java.time.Instant], language: Option[com.neovisionaries.i18n.LanguageCode], sortBy: Option[com.github.fedeoasi.newsapi.SortBy], pageSize: Option[Int], page: Option[Int])com.github.fedeoasi.newsapi.NewsApiClient.Response[com.github.fedeoasi.newsapi.ArticlesResponse].
+Unspecified value parameter query.
+    val Right(response) = client.everything(from = Some(fromDate), to = Some(toDate))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:28 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:14:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:28 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:15:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:13:27: stale bloop error: not enough arguments for method everything: (query: String, sources: Seq[String], domains: Seq[String], from: Option[java.time.Instant], to: Option[java.time.Instant], language: Option[com.neovisionaries.i18n.LanguageCode], sortBy: Option[com.github.fedeoasi.newsapi.SortBy], pageSize: Option[Int], page: Option[Int])com.github.fedeoasi.newsapi.NewsApiClient.Response[com.github.fedeoasi.newsapi.ArticlesResponse].
+Unspecified value parameter query.
+    val Right(response) = client.everything(from = Some(fromDate), to = Some(toDate))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:14:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:27 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:15:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 12:28:32 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 12:28:32 INFO  time: compiled root in 0.34s[0m
+[0m2021.10.25 12:28:40 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 12:28:40 INFO  time: compiled root in 0.67s[0m
+[0m2021.10.25 12:32:59 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 12:32:59 INFO  time: compiled root in 0.45s[0m
+[0m2021.10.25 12:33:20 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 12:33:20 INFO  time: compiled root in 0.78s[0m
+[0m2021.10.25 12:35:09 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 12:35:09 INFO  time: compiled root in 0.46s[0m
+[0m2021.10.25 12:37:47 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 12:37:47 INFO  time: compiled root in 0.15s[0m
+[0m2021.10.25 12:44:23 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 12:44:23 INFO  time: compiled root in 0.46s[0m
+[0m2021.10.25 14:25:38 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 14:25:38 INFO  time: compiled root in 0.14s[0m
+[0m2021.10.25 14:26:01 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 14:26:01 INFO  time: compiled root in 0.53s[0m
+[0m2021.10.25 14:28:56 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 14:28:56 INFO  time: compiled root in 0.31s[0m
+[0m2021.10.25 15:00:04 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 15:00:04 INFO  time: compiled root in 0.12s[0m
+[0m2021.10.25 15:03:08 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 15:03:08 INFO  time: compiled root in 0.32s[0m
+[0m2021.10.25 15:04:39 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:25:45: stale bloop error: not found: value country
+    val Right(response) = client.everything(country = Some(CountryCode.US))
+                                            ^^^^^^^[0m
+[0m2021.10.25 15:04:39 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:26:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:39 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:27:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:39 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:25:45: stale bloop error: not found: value country
+    val Right(response) = client.everything(country = Some(CountryCode.US))
+                                            ^^^^^^^[0m
+[0m2021.10.25 15:04:39 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:26:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:39 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:27:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:25:45: stale bloop error: not found: value country
+    val Right(response) = client.everything(country = Some(CountryCode.US))
+                                            ^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:26:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:27:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:25:45: stale bloop error: not found: value country
+    val Right(response) = client.everything(country = Some(CountryCode.US))
+                                            ^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:26:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:27:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:25:45: stale bloop error: not found: value country
+    val Right(response) = client.everything(country = Some(CountryCode.US))
+                                            ^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:26:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:27:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:25:45: stale bloop error: not found: value country
+    val Right(response) = client.everything(country = Some(CountryCode.US))
+                                            ^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:26:23: stale bloop error: value totalResults is not a member of Any
+    println(s"Found ${response.totalResults} headlines.")
+                      ^^^^^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:04:41 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:27:5: stale bloop error: value articles is not a member of Any
+    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))
+    ^^^^^^^^^^^^^^^^^[0m
+[0m2021.10.25 15:05:02 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 15:05:02 INFO  time: compiled root in 0.26s[0m
+[0m2021.10.25 15:05:22 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 15:05:22 INFO  time: compiled root in 0.14s[0m
+[0m2021.10.25 15:06:25 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 15:06:25 INFO  time: compiled root in 0.75s[0m
+[0m2021.10.25 15:49:18 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 15:49:18 INFO  time: compiled root in 0.75s[0m
+[0m2021.10.25 15:51:28 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:46:5: stale bloop warning: A try without a catch or finally is equivalent to putting its body in a block; no exceptions are handled.
+> try {  
+>       selection = readInt()
+>       selection match {
+>         case 1 => {
+>           println("You selected 1")
+>         }
+> 
+>         case 2 => {
+>           println("You selected 2")
+>         }
+> 
+>         case 3 => {
+>           println("You selected 3")
+>         }
+> 
+>       }
+>     }[0m
+[0m2021.10.25 15:51:28 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:46:5: stale bloop warning: A try without a catch or finally is equivalent to putting its body in a block; no exceptions are handled.
+> try {  
+>       selection = readInt()
+>       selection match {
+>         case 1 => {
+>           println("You selected 1")
+>         }
+> 
+>         case 2 => {
+>           println("You selected 2")
+>         }
+> 
+>         case 3 => {
+>           println("You selected 3")
+>         }
+> 
+>       }
+>     }[0m
+[0m2021.10.25 15:51:28 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:46:5: stale bloop warning: A try without a catch or finally is equivalent to putting its body in a block; no exceptions are handled.
+> try {  
+>       selection = readInt()
+>       selection match {
+>         case 1 => {
+>           println("You selected 1")
+>         }
+> 
+>         case 2 => {
+>           println("You selected 2")
+>         }
+> 
+>         case 3 => {
+>           println("You selected 3")
+>         }
+> 
+>       }
+>     }[0m
+[0m2021.10.25 15:51:28 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:46:5: stale bloop warning: A try without a catch or finally is equivalent to putting its body in a block; no exceptions are handled.
+> try {  
+>       selection = readInt()
+>       selection match {
+>         case 1 => {
+>           println("You selected 1")
+>         }
+> 
+>         case 2 => {
+>           println("You selected 2")
+>         }
+> 
+>         case 3 => {
+>           println("You selected 3")
+>         }
+> 
+>       }
+>     }[0m
+[0m2021.10.25 15:51:28 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:46:5: stale bloop warning: A try without a catch or finally is equivalent to putting its body in a block; no exceptions are handled.
+> try {  
+>       selection = readInt()
+>       selection match {
+>         case 1 => {
+>           println("You selected 1")
+>         }
+> 
+>         case 2 => {
+>           println("You selected 2")
+>         }
+> 
+>         case 3 => {
+>           println("You selected 3")
+>         }
+> 
+>       }
+>     }[0m
+[0m2021.10.25 15:51:28 INFO  C:\Scala\Project1\project1\src\main\scala\news\news.scala:46:5: stale bloop warning: A try without a catch or finally is equivalent to putting its body in a block; no exceptions are handled.
+> try {  
+>       selection = readInt()
+>       selection match {
+>         case 1 => {
+>           println("You selected 1")
+>         }
+> 
+>         case 2 => {
+>           println("You selected 2")
+>         }
+> 
+>         case 3 => {
+>           println("You selected 3")
+>         }
+> 
+>       }
+>     }[0m
+[0m2021.10.25 15:51:31 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 15:51:31 INFO  time: compiled root in 0.61s[0m
+[0m2021.10.25 16:07:47 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:07:47 INFO  time: compiled root in 0.78s[0m
+[0m2021.10.25 16:15:23 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:15:23 INFO  time: compiled root in 47ms[0m
+[0m2021.10.25 16:16:47 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:16:47 INFO  time: compiled root in 49ms[0m
+[0m2021.10.25 16:20:09 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:20:09 INFO  time: compiled root in 30ms[0m
+[0m2021.10.25 16:25:34 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:25:34 INFO  time: compiled root in 0.73s[0m
+[0m2021.10.25 16:30:06 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:30:06 INFO  time: compiled root in 0.2s[0m
+[0m2021.10.25 16:31:09 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:31:09 INFO  time: compiled root in 0.22s[0m
+[0m2021.10.25 16:35:58 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:35:58 INFO  time: compiled root in 0.12s[0m
+[0m2021.10.25 16:37:52 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:37:52 INFO  time: compiled root in 0.12s[0m
+[0m2021.10.25 16:38:57 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:38:57 INFO  time: compiled root in 58ms[0m
+[0m2021.10.25 16:39:12 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:39:13 INFO  time: compiled root in 1.03s[0m
+[0m2021.10.25 16:47:01 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:47:01 INFO  time: compiled root in 0.52s[0m
+[0m2021.10.25 16:47:33 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:47:33 INFO  time: compiled root in 0.81s[0m
+[0m2021.10.25 16:48:12 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 16:48:12 INFO  time: compiled root in 0.29s[0m
+[0m2021.10.25 17:01:08 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 17:01:08 INFO  time: compiled root in 0.42s[0m
+[0m2021.10.25 17:03:27 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 17:03:27 INFO  time: compiled root in 0.5s[0m
+[0m2021.10.25 17:07:10 INFO  shutting down Metals[0m
+[0m2021.10.25 17:07:10 INFO  Shut down connection with build server.[0m
+[0m2021.10.25 17:07:10 INFO  Shut down connection with build server.[0m
+[0m2021.10.25 17:08:08 INFO  Started: Metals version 0.10.7 in workspace 'C:\Scala\Project1\project1' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.25 17:08:08 INFO  time: initialize in 0.47s[0m
+[0m2021.10.25 17:08:09 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.25 17:08:09 WARN  no build target for: C:\Scala\Project1\project1\src\main\scala\news\news.scala[0m
+[0m2021.10.25 17:08:09 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 25294'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:25294...
+The server is listening for incoming connections at tcp://127.0.0.1:25294...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.25 17:08:11 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 17:08:11 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 18271'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:18271...
+The server is listening for incoming connections at tcp://127.0.0.1:18271...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.25 17:08:12 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 17:08:12 INFO  time: Connected to build server in 2.65s[0m
+[0m2021.10.25 17:08:12 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.25 17:08:12 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.25 17:08:13 INFO  time: Imported build in 0.24s[0m
+[0m2021.10.25 17:08:13 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.25 17:08:15 INFO  time: code lens generation in 3.99s[0m
+[0m2021.10.25 17:08:15 INFO  time: code lens generation in 4.94s[0m
+[0m2021.10.25 17:08:16 INFO  time: indexed workspace in 3.72s[0m
+[0m2021.10.25 17:08:17 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.25 17:08:18 INFO  compiling root-test (1 scala source)[0m
+[0m2021.10.25 17:08:18 INFO  time: compiled root-test in 4ms[0m
+[0m2021.10.25 17:11:15 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 17:11:15 INFO  time: compiled root in 0.26s[0m
+[0m2021.10.25 17:11:40 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 17:11:40 INFO  time: compiled root in 0.25s[0m
+[0m2021.10.25 17:11:42 INFO  shutting down Metals[0m
+[0m2021.10.25 17:11:42 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.10.25 17:11:42 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
+[0m2021.10.25 17:11:56 INFO  Started: Metals version 0.10.7 in workspace 'C:\Scala\Project1\project1' for client Visual Studio Code 1.61.2.[0m
+[0m2021.10.25 17:11:56 INFO  time: initialize in 0.58s[0m
+[0m2021.10.25 17:11:57 INFO  Attempting to connect to the build server...[0m
+[0m2021.10.25 17:11:57 WARN  no build target for: C:\Scala\Project1\project1\src\main\scala\news\news.scala[0m
+[0m2021.10.25 17:11:57 INFO  skipping build import with status 'Installed'[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 17184'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:17184...
+The server is listening for incoming connections at tcp://127.0.0.1:17184...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.25 17:11:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 17:11:59 INFO  Attempting to connect to the build server...[0m
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol tcp --port 18987'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at 127.0.0.1:18987...
+The server is listening for incoming connections at tcp://127.0.0.1:18987...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+[0m2021.10.25 17:12:00 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\Work\AppData\Local\scalameta\metals\cache\bsp.trace.json[0m
+[0m2021.10.25 17:12:00 INFO  time: Connected to build server in 3.09s[0m
+[0m2021.10.25 17:12:00 INFO  Connected to Build server: Bloop v1.4.9[0m
+[0m2021.10.25 17:12:00 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.25 17:12:00 INFO  time: Imported build in 0.12s[0m
+[0m2021.10.25 17:12:01 INFO  no build target: using presentation compiler with only scala-library: 2.12.15[0m
+[0m2021.10.25 17:12:03 INFO  time: code lens generation in 4.46s[0m
+[0m2021.10.25 17:12:03 INFO  time: code lens generation in 5.41s[0m
+[0m2021.10.25 17:12:05 INFO  time: indexed workspace in 4.53s[0m
+[0m2021.10.25 17:12:05 INFO  no build target: using presentation compiler with only scala-library: 2.12.8[0m
+[0m2021.10.25 17:13:28 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 17:13:28 INFO  time: compiled root in 0.3s[0m
+[0m2021.10.25 17:15:16 INFO  compiling root (1 scala source)[0m
+[0m2021.10.25 17:15:16 INFO  time: compiled root in 0.33s[0m
+[0m2021.10.25 17:22:28 INFO  shutting down Metals[0m
+[0m2021.10.25 17:22:28 INFO  Shut down connection with build server.[0m
+[0m2021.10.25 17:22:28 INFO  Shut down connection with build server.[0m
+No more data in the client stdin, exiting...
+No more data in the client stdin, exiting...
+No more data in the server stdin, exiting...
