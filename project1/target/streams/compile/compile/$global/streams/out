@@ -1,12 +1,22 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\news.scala:115:109: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Int[0m
-[0m[[0m[31merror[0m] [0m[0m required: Option[Int][0m
-[0m[[0m[31merror[0m] [0m[0m    val Right(response) = client.everything(query = "nhl", from = Some(fromDate), to = Some(toDate), page = pageNum, pageSize = Some(pageS))[0m
-[0m[[0m[31merror[0m] [0m[0m                                                                                                            ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\news.scala:116:32: value totalResults is not a member of Any[0m
-[0m[[0m[31merror[0m] [0m[0m    println(s"Found ${response.totalResults} articles.")[0m
-[0m[[0m[31merror[0m] [0m[0m                               ^[0m
-[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\news.scala:117:14: value articles is not a member of Any[0m
-[0m[[0m[31merror[0m] [0m[0m    response.articles.foreach(a => println(s"${a.publishedAt} - ${a.source.name} - ${a.title}"))[0m
-[0m[[0m[31merror[0m] [0m[0m             ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:4:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.HttpEntity[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:5:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.HttpResponse[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:6:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.client.ClientProtocolException[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:7:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.client.HttpClient[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:8:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.client.methods.HttpGet[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:9:12: object apache is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.apache.http.impl.client.DefaultHttpClient[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:30:26: not found: type DefaultHttpClient[0m
+[0m[[0m[31merror[0m] [0m[0m    val httpClient = new DefaultHttpClient()[0m
+[0m[[0m[31merror[0m] [0m[0m                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m7 errors found[0m

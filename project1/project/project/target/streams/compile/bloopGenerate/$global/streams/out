@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0m[project1-build-build] Classpath dependencies List()[0m
+[0m[[0m[0mdebug[0m] [0m[0m[project1-build-build] Dependencies from configurations List()[0m
+[0m[[0m[0mdebug[0m] [0m[0mBloop wrote the configuration of project 'project1-build-build' to 'C:\Scala\Project1\project1\project\project\.bloop\project1-build-build.json'[0m
+[0m[[0m[32msuccess[0m] [0m[0mGenerated .bloop\project1-build-build.json[0m

@@ -1,15 +1,16 @@
 import Dependencies._
 
-ThisBuild / scalaVersion     := "2.12.8"
-ThisBuild / version          := "0.1.0-SNAPSHOT"
+ThisBuild / scalaVersion     := "2.11.8"
+ThisBuild / version          := "0.1.0"
 ThisBuild / organization     := "com.example"
 ThisBuild / organizationName := "example"
 
 lazy val root = (project in file("."))
   .settings(
     name := "project1",
-    libraryDependencies += scalaTest % Test,
-    libraryDependencies += "com.github.fedeoasi" %% "news-api-client" % "0.4"
+    //libraryDependencies += scalaTest % Test,
+    libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.0",
+    libraryDependencies += "net.liftweb" %% "lift-json" % "2.6"
   )
 
 // Uncomment the following for publishing to Sonatype.
