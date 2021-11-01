@@ -6594,3 +6594,6 @@ No more data in the client stdin, exiting...
 [0m2021.10.29 17:34:44 WARN  unsupported Scala 2.11.8[0m
 [0m2021.10.29 17:34:44 WARN  unsupported Scala 2.11.8[0m
 [0m2021.10.29 17:34:52 WARN  unsupported Scala 2.11.8[0m
+[0m2021.10.29 17:39:43 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.29 17:39:43 WARN  unsupported Scala 2.12.7[0m
+[0m2021.10.29 17:39:47 WARN  unsupported Scala 2.12.7[0m
