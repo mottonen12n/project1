@@ -9,6 +9,7 @@ import org.apache.http.client.methods.HttpGet
 import org.apache.http.impl.client.DefaultHttpClient
 import java.time.Instant
 import java.time.Duration
+import java.time.ZoneId
 import scala.io.StdIn._
 import java.io.IOException
 import java.sql.{SQLException, Connection, ResultSet, Statement, DriverManager}
@@ -16,6 +17,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import java.io.PrintWriter;
+import java.time.temporal.ChronoField
 
 object Main {
 
@@ -25,7 +27,13 @@ object Main {
     case class errResponse (status: String, code: String, message: String)
 
     def main(args: Array[String]): Unit = {
-        
+      var testtime = Instant.parse("2021-10-20T00:00:00Z")
+      println(testtime.toString())
+      val testzdt = testtime.atZone(ZoneId.of("UTC"))
+      println(testzdt.getMonthValue())
+      println(testzdt.getDayOfMonth())
+
+      /*  
       var con: java.sql.Connection = null;
     try {
       // For Hive2:
@@ -63,6 +71,7 @@ object Main {
         }
       }
     }
+    */
 
       //println(currentTime.toString())
       //var newTime: Instant = currentTime.plus(Duration.ofHours(6))

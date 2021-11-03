@@ -1,6 +1,7 @@
 package news
 
-import java.time.{Instant, Duration}
+import java.time.{Instant, Duration, ZoneId}
+import java.time.temporal.ChronoField
 import scala.io.StdIn._
 import java.io.IOException
 import java.sql.{SQLException, Connection, ResultSet, Statement, DriverManager}
@@ -21,13 +22,11 @@ object NewsMain {
   
   def main(args: Array[String]): Unit = {
     //Variables
-    var credentials:Map[String, String] = Map("nmottonen" -> "password", "mrbasic" -> "password", "admin" -> "Password")
-    var admins:List[String] = List("nmottonen", "admin")
     var inputID = ""
     var inputPW = ""
     var loginLoop = true
     
-    //adminMenu()
+    //adminMenu() //Skip login for testing
 
     //Login Menu
     
@@ -74,9 +73,9 @@ object NewsMain {
       do{
         println("Welcome to the news analyzer, please make a selection:\n" +
           "(1) Analysis Questions\n" +
-          "(2)\n" +
-          "(3)\n" +
-          "(0) Exit Application")
+          "(2) Change Username\n" +
+          "(3) Change Password\n" +
+          "(0) Logout")
         try {  
           selection = readInt()
           selection match {
@@ -85,15 +84,17 @@ object NewsMain {
             }
 
             case 2 => {
-              println("You selected 2")
+              changeUsername(inputID)
             }
 
             case 3 => {
-              println("You selected 3")
+              changePassword(inputID)
             }
+
             case 0 => {
               basicLoop = false
             }
+
             case _ => {
               println("Invalid selection, please try again.")
             }
@@ -112,10 +113,11 @@ object NewsMain {
       //Main menu
       do{
         println("Welcome to the news analyzer admin menu, please make a selection:\n" +
-          "(1)\n" +
-          "(2)\n" +
-          "(3)\n" +
-          "(0) Exit Application")
+          "(1) Answer Analysis Questions\n" +
+          "(2) Change Username\n" +
+          "(3) Change Password\n" +
+          "(4) Get Data from NewsAPI\n" +
+          "(0) Logout")
         try {  
           selection = readInt()
           selection match {
@@ -124,12 +126,28 @@ object NewsMain {
             }
 
             case 2 => {
-              println("You selected 2")
+              changeUsername(inputID)
             }
 
             case 3 => {
-              println("You selected 3")
+              changePassword(inputID)
             }
+
+            case 4 => {
+              try{
+                println("Please enter the start date and time (in ISO-8601 instant format) of the news you would to get: ")
+                var inputTo: Instant = Instant.parse(readLine())
+                println("Now, enter the end date and time (again in ISO-8601 instant format) of the news you would like to get: ")
+                var inputFrom: Instant = Instant.parse(readLine())
+                println("Finally, enter the file name that you would like to save the news as: ")
+                var inputFilename = readLine()
+                createFile(inputTo, inputFrom, inputFilename)
+              }
+              catch {
+                case e: Exception => println("Invalid input received (Make sure start/end time are in proper format).")
+              }
+            }
+
             case 0 => {
               adminLoop = false
             }
@@ -162,7 +180,6 @@ object NewsMain {
           selection match {
             case 1 => {
               println("You selected 1")
-              createFile()
             }
 
             case 2 => {
@@ -172,6 +189,19 @@ object NewsMain {
             case 3 => {
               println("You selected 3")
             }
+
+            case 4 => {
+              println("You selected 4")
+            }
+
+            case 5 => {
+              println("You selected 5")
+            }
+
+            case 6 => {
+              println("You selected 6")
+            }
+
             case 0 => {
               analysisLoop = false
             }
@@ -187,40 +217,15 @@ object NewsMain {
     }
   }
 
-  val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/"
+  val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/news/"
 
   case class Article (source: Source, author: String, title: String, description: String, url: String, urlToImage: String, publishedAt: String, content: String)
   case class Source (id: String, name: String)
   case class apiResponse (status: String, totalResults: Int, articles: Array[Article])
   case class errResponse (status: String, code: String, message: String)
 
-  /*def getNews(){
-  implicit val formats = DefaultFormats
-        var data = getRestContent("https://newsapi.org/v2/everything?q=nhl&apiKey=514d7d8f72a14c57a8e1a70db84bc052")
-        //println(data)
-        val jValue = parse(data)
-        val results = jValue.extract[apiResponse]
-        println(results)
-        for(a <- results.articles) println(s"${a.title} | ${a.source.name} | ${a.publishedAt} | ${a.content}")
-  }*/
-
-  def copyFromLocal(): Unit = {
-    val src = "file:///home/maria_dev/files2.txt"
-    val target = path + "files2.txt"
-    println(s"Copying local file $src to $target ...")
-    
-    val conf = new Configuration()
-    val fs = FileSystem.get(conf)
-
-    val localpath = new Path(src)
-    val hdfspath = new Path(target)
-    
-    fs.copyFromLocalFile(false, localpath, hdfspath)
-    println(s"Done copying local file $src to $target ...")
-  }
-
-  def createFile(): Unit = {
-    val filename = path + "nhlnews.csv"
+  def createFile(fromTime: Instant, toTime: Instant, inputName: String): Unit = {
+    val filename = path + inputName
     println(s"Creating file $filename ...")
     
     val conf = new Configuration()
@@ -228,9 +233,7 @@ object NewsMain {
     
     //Get new from NewsAPI
     implicit val formats = DefaultFormats
-    val start: Instant = Instant.parse("2021-10-29T00:00:00Z")
-    var currentTime = start
-    val end: Instant = Instant.parse("2021-10-31T00:00:00Z")
+    var currentTime = fromTime
     // Check if file exists. If yes, delete it.
     println("Checking if it already exists...")
     val filepath = new Path( filename)
@@ -242,19 +245,17 @@ object NewsMain {
     val output = fs.create(new Path(filename))
     val writer = new PrintWriter(output)
 
-    var count = 0
-    var day = 29
-    while(currentTime.isBefore(end)){
+    while(currentTime.isBefore(toTime)){
       //Get articles from NewsAPI
       implicit val formats = DefaultFormats
-      var data = getRestContent(everythingQuery("nhl", currentTime, currentTime.plusSeconds(28799)))
+      var data = getRestContent(everythingQuery("nhl", currentTime, currentTime.plusSeconds(21599)))
       //println(data)
       try{
       val jValue = parse(data)
       val results = jValue.extract[apiResponse]
       println(results)
-      val dayOfArticle = day + (count/4)
-      results.articles.foreach(a => writer.write(s"$dayOfArticle%${a.title}%${a.description}\n"))
+      val currentZDT = currentTime.atZone(ZoneId.of("UTC"))
+      results.articles.foreach(a => writer.write(s"${currentZDT.getMonthValue()}%${currentZDT.getDayOfMonth()}%${a.title}%${a.description}\n"))
       }
       catch {
         case e: Exception => {
@@ -265,7 +266,6 @@ object NewsMain {
       }
 
       currentTime = currentTime.plus(Duration.ofHours(6))
-      count += 1
     }
     writer.close()
     println(s"Done creating file $filename ...")
@@ -312,6 +312,72 @@ var con: java.sql.Connection = null;
         if(loginResults.getString(2) == password) return Array(true, loginResults.getBoolean(3))
         else return Array(false,false)
       } else return Array(false,false)
+    }
+    catch {
+      case ex: Exception => {
+        ex.printStackTrace();
+        throw new Exception(s"${ex.getMessage}")
+      }
+    } finally {
+      try {
+        if (con != null)
+          con.close();
+      } catch {
+        case ex: Exception => {
+          ex.printStackTrace();
+          throw new Exception(s"${ex.getMessage}")
+        }
+      }
+    }
+  }
+
+  def changeUsername(username: String): Unit = {
+    println(s"Changing username: $username")
+    println("Input new username: ")
+    val newUsername = readLine()
+    try{
+      var driverName = "org.apache.hive.jdbc.HiveDriver"
+      val conStr = "jdbc:hive2://sandbox-hdp.hortonworks.com:10000/loginDB";
+      Class.forName(driverName);
+
+      con = DriverManager.getConnection(conStr, "", "");
+      val statement = con.createStatement();
+      println("connected + statement created")
+      
+    }
+    catch {
+      case ex: Exception => {
+        ex.printStackTrace();
+        throw new Exception(s"${ex.getMessage}")
+      }
+    } finally {
+      try {
+        if (con != null)
+          con.close();
+      } catch {
+        case ex: Exception => {
+          ex.printStackTrace();
+          throw new Exception(s"${ex.getMessage}")
+        }
+      }
+    }
+  }
+
+  def changePassword(username: String): Unit = {
+    println(s"Changing password for user: $username")
+    println("Input new password: ")
+    val newPassword1 = readLine()
+    println("Re-input password: ")
+    val newPassword2 = readLine()
+    if (newPassword1 != newPassword2) println("Passwords did not match, please try again.")
+    try{
+      var driverName = "org.apache.hive.jdbc.HiveDriver"
+      val conStr = "jdbc:hive2://sandbox-hdp.hortonworks.com:10000/loginDB";
+      Class.forName(driverName);
+
+      con = DriverManager.getConnection(conStr, "", "");
+      val statement = con.createStatement();
+      println("connected + statement created")
     }
     catch {
       case ex: Exception => {

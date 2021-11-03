@@ -1,6 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\news.scala:310:7: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : Unit[0m
-[0m[[0m[31merror[0m] [0m[0m required: Array[Boolean][0m
-[0m[[0m[31merror[0m] [0m[0m      if(loginResults.next()){[0m
-[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:32:37: not found: value ZoneID[0m
+[0m[[0m[31merror[0m] [0m[0m      val testzdt = testtime.atZone(ZoneID.of("UTC"))[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m
