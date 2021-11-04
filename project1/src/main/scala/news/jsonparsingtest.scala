@@ -27,13 +27,15 @@ object Main {
     case class errResponse (status: String, code: String, message: String)
 
     def main(args: Array[String]): Unit = {
-      var testtime = Instant.parse("2021-10-20T00:00:00Z")
-      println(testtime.toString())
-      val testzdt = testtime.atZone(ZoneId.of("UTC"))
-      println(testzdt.getMonthValue())
-      println(testzdt.getDayOfMonth())
-
-      /*  
+      //var testtime = Instant.parse("2021-10-20T00:00:00Z")
+      //println(testtime.toString())
+      //val testzdt = testtime.atZone(ZoneId.of("UTC"))
+      //println(testzdt.getMonthValue())
+      //println(testzdt.getDayOfMonth())
+      val test = "<ol><li>Oilers' Zack Kassian enters concussion, \"protocol\""
+      println(test)
+      println(test.replace("<ol>", "").replace("</ol>", " ").replace("</li>"," ").replace("<li>", "").replace("<b>", "").replace("</b>", "").replace(",", "").replace(".", "").replace("\n", " ").replace("\t", " ").replace("’", " ").replace("\"", ""))
+      /*  test.replaceAll("</li>"," ").replaceAll("<li>", " ").replaceAll("\n", " ").replaceAll("\t", " ").replaceAll(",", " ").replaceAll(".", " ")
       var con: java.sql.Connection = null;
     try {
       // For Hive2:

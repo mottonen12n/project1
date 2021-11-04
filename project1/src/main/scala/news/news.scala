@@ -117,6 +117,7 @@ object NewsMain {
           "(2) Change Username\n" +
           "(3) Change Password\n" +
           "(4) Get Data from NewsAPI\n" +
+          "(5) Get Other Sports News results (for question 4)\n" +
           "(0) Logout")
         try {  
           selection = readInt()
@@ -135,13 +136,28 @@ object NewsMain {
 
             case 4 => {
               try{
-                println("Please enter the start date and time (in ISO-8601 instant format) of the news you would to get: ")
-                var inputTo: Instant = Instant.parse(readLine())
+                println("Please enter the start date and time (in ISO-8601 instant format) of the news you would like to get: ")
+                val inputTo: Instant = Instant.parse(readLine())
                 println("Now, enter the end date and time (again in ISO-8601 instant format) of the news you would like to get: ")
-                var inputFrom: Instant = Instant.parse(readLine())
-                println("Finally, enter the file name that you would like to save the news as: ")
-                var inputFilename = readLine()
+                val inputFrom: Instant = Instant.parse(readLine())
+                println("Finally, enter the file name that you would like to save the news as (include extension): ")
+                val inputFilename = readLine()
                 createFile(inputTo, inputFrom, inputFilename)
+              }
+              catch {
+                case e: Exception => println("Invalid input received (Make sure start/end time are in proper format).")
+              }
+            }
+
+            case 5 => {
+              try{
+                println("Please enter the start date and time (in ISO-8601 instant format) of the other news you would like to get.\n" +
+                  "This only affects question number 4:")
+                val inputTo: Instant = Instant.parse(readLine())
+                println("Now, enter the end date and time (again in ISO-8601 instant format) of the news you would like to get.\n" +
+                  "This only affects question number 4 (Also, with the developer API key, the max supported time frame is 1 month):")
+                val inputFrom: Instant = Instant.parse(readLine())
+                createOtherFile(inputTo, inputFrom)
               }
               catch {
                 case e: Exception => println("Invalid input received (Make sure start/end time are in proper format).")
@@ -217,7 +233,7 @@ object NewsMain {
     }
   }
 
-  val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/news/"
+  val path = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/news/production/nhlnews/"
 
   case class Article (source: Source, author: String, title: String, description: String, url: String, urlToImage: String, publishedAt: String, content: String)
   case class Source (id: String, name: String)
@@ -236,7 +252,7 @@ object NewsMain {
     var currentTime = fromTime
     // Check if file exists. If yes, delete it.
     println("Checking if it already exists...")
-    val filepath = new Path( filename)
+    val filepath = new Path(filename)
     val isExisting = fs.exists(filepath)
     if(isExisting) {
       println("Yes it does exist. Deleting it...")
@@ -255,7 +271,7 @@ object NewsMain {
       val results = jValue.extract[apiResponse]
       println(results)
       val currentZDT = currentTime.atZone(ZoneId.of("UTC"))
-      results.articles.foreach(a => writer.write(s"${currentZDT.getMonthValue()}%${currentZDT.getDayOfMonth()}%${a.title}%${a.description}\n"))
+      results.articles.foreach(a => writer.write(s"${currentZDT.getMonthValue()},${currentZDT.getDayOfMonth()},${cleanString(a.title)},${cleanString(a.description)}\n"))
       }
       catch {
         case e: Exception => {
@@ -269,6 +285,92 @@ object NewsMain {
     }
     writer.close()
     println(s"Done creating file $filename ...")
+  }
+
+  def createOtherFile(fromTime: Instant, toTime: Instant): Unit = {
+    val conf = new Configuration()
+    val fs = FileSystem.get(conf)
+    // Check if file exists. If yes, delete it.
+    //println("Checking if it already exists...")
+    val otherFilename = "hdfs://sandbox-hdp.hortonworks.com:8020/user/maria_dev/news/production/othernews/othernewstotals.csv"
+    println(s"Creating file $otherFilename ...")
+    val otherFilepath = new Path(otherFilename)
+    val otherIsExisting = fs.exists(otherFilepath)
+    if(otherIsExisting) {
+      //println("Yes it does exist. Deleting it...")
+      fs.delete(otherFilepath, false)
+    }
+    val otherOutput = fs.create(new Path(otherFilename))
+    val otherWriter = new PrintWriter(otherOutput)
+
+
+      //Get articles from NewsAPI for other sports(nba, nfl, mlb) (total hits is all that is needed)
+      implicit val formats = DefaultFormats
+      var nhlData = getRestContent(everythingQuery("nhl", fromTime, toTime))
+      var nbaData = getRestContent(everythingQuery("nba", fromTime, toTime))
+      var nflData = getRestContent(everythingQuery("nfl", fromTime, toTime))
+      var mlbData = getRestContent(everythingQuery("mlb", fromTime, toTime))
+      //println(data)
+      try{
+      val jValue = parse(nhlData)
+      val results = jValue.extract[apiResponse]
+      println(results)
+      otherWriter.write(s"nhl,${results.totalResults}\n")
+      }
+      catch {
+        case e: Exception => {
+          val jValue = parse(nbaData)
+          val results = jValue.extract[errResponse]
+          println(results)
+        }
+      }
+      try{
+      val jValue = parse(nbaData)
+      val results = jValue.extract[apiResponse]
+      println(results)
+      otherWriter.write(s"nba,${results.totalResults}\n")
+      }
+      catch {
+        case e: Exception => {
+          val jValue = parse(nbaData)
+          val results = jValue.extract[errResponse]
+          println(results)
+        }
+      }
+      try{
+      val jValue = parse(nflData)
+      val results = jValue.extract[apiResponse]
+      println(results)
+      otherWriter.write(s"nfl,${results.totalResults}\n")
+      }
+      catch {
+        case e: Exception => {
+          val jValue = parse(nflData)
+          val results = jValue.extract[errResponse]
+          println(results)
+        }
+      }
+      try{
+      val jValue = parse(mlbData)
+      val results = jValue.extract[apiResponse]
+      println(results)
+      otherWriter.write(s"mlb,${results.totalResults}\n")
+      }
+      catch {
+        case e: Exception => {
+          val jValue = parse(mlbData)
+          val results = jValue.extract[errResponse]
+          println(results)
+        }
+      }
+
+    otherWriter.close()
+
+  }
+
+  def cleanString(input: String): String = {
+    //Gets rid of punctuation and undesirable content in article titles/description such as html tags (<li>, <b>, etc.). Also trims input.
+    return input.replace("<ol>", "").replace("</ol>", " ").replace("</li>"," ").replace("<li>", "").replace("<b>", "").replace("</b>", "").replace(",", "").replace(".", "").replace("\n", " ").replace("\t", " ").replace("’", " ").replace("'", "").replace("\"", "").replace("!", "").replace("?", "").replace("`", "").replace(";", "").replace(":", "").replace("(", "").replace(")", "").trim()
   }
 
   def getRestContent(url: String): String = {

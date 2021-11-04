@@ -1,4 +1,25 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:32:37: not found: value ZoneID[0m
-[0m[[0m[31merror[0m] [0m[0m      val testzdt = testtime.atZone(ZoneID.of("UTC"))[0m
-[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:35:18: unclosed string literal[0m
+[0m[[0m[31merror[0m] [0m[0m      val test = "The Athletic%<ol><li>Oilers' Zack Kassian enters concussion protocol after injury during fight  The Athletic[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:36:77: unclosed character literal[0m
+[0m[[0m[31merror[0m] [0m[0m</li><li>Oilers tough guy Zack Kassian helped off ice after 'scary, terrible' fight  Yahoo Canada Sports[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:36:84: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m</li><li>Oilers tough guy Zack Kassian helped off ice after 'scary, terrible' fight  Yahoo Canada Sports[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:36:85: illegal character '\u00a0'[0m
+[0m[[0m[31merror[0m] [0m[0m</li><li>Oilers tough guy Zack Kassian helped off ice after 'scary, terrible' fight  Yahoo Canada Sports[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:37:16: illegal character '\u2019'[0m
+[0m[[0m[31merror[0m] [0m[0m</li><li>Flames’ Tanev responds to McDavid’s complaint o…[0m
+[0m[[0m[31merror[0m] [0m[0m               ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:37:43: illegal character '\u2019'[0m
+[0m[[0m[31merror[0m] [0m[0m</li><li>Flames’ Tanev responds to McDavid’s complaint o…[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:37:57: illegal character '\u2026'[0m
+[0m[[0m[31merror[0m] [0m[0m</li><li>Flames’ Tanev responds to McDavid’s complaint o…[0m
+[0m[[0m[31merror[0m] [0m[0m                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0mC:\Scala\Project1\project1\src\main\scala\news\jsonparsingtest.scala:38:1: unclosed string literal[0m
+[0m[[0m[31merror[0m] [0m[0m"[0m
+[0m[[0m[31merror[0m] [0m[0m^[0m
+[0m[[0m[31merror[0m] [0m[0m8 errors found[0m

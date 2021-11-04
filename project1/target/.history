@@ -152,3 +152,15 @@ compile
 run
 compile
 run
+package
+compile
+run
+compile
+1
+run
+package
+compile
+1
+run
+compile
+package
