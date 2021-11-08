@@ -278,7 +278,11 @@ object NewsMain {
       val results = jValue.extract[apiResponse]
       println(results)
       val currentZDT = currentTime.atZone(ZoneId.of("UTC"))
-      results.articles.foreach(a => writer.write(s"${currentZDT.getMonthValue()},${currentZDT.getDayOfMonth()},${cleanString(a.title)},${cleanString(a.description)}\n"))
+        results.articles.foreach(a => {
+          if(a.title != null && a.description != null){
+          writer.write(s"${currentZDT.getMonthValue()},${currentZDT.getDayOfMonth()},${cleanString(a.title)},${cleanString(a.description)}\n")
+          }
+        })
       }
       catch {
         case e: Exception => {

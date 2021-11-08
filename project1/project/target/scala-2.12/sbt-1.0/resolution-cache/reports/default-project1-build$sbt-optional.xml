@@ -9,7 +9,7 @@
 		extra-sbtVersion="1.0"
 		conf="optional"
 		confs="compile, runtime, test, provided, optional"
-		date="20211029154918"/>
+		date="20211108074230"/>
 	<dependencies>
 	</dependencies>
 </ivy-report>
